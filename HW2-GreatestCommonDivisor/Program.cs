@@ -5,12 +5,13 @@ public class Program
 	static int GCD(int a, int b)
 	{
 		int Remainder;
-
+		 
 		while (b != 0)
 		{
-			Remainder = a % b;
-			a = b;
-			b = Remainder;
+			// single equal sign is assigning a value, dbl equal is compairing the 2
+			Remainder = a % b; //a divided by b = *** with remainder of (new value for "Remainder")
+			a = b;	//assigns value of variable "b" to the variable "a"
+			b = Remainder; ////assigns value of variable "Remainder" to the variable "b"
 		}
 
 		return a;
